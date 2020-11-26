@@ -25,14 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fa831de-3cff-4706-97c7-aa109dd50168" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/tags.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/post.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/post.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/post.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,19 +67,6 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -102,6 +83,10 @@
       <workItem from="1606041967358" duration="4443000" />
       <workItem from="1606065670051" duration="16465000" />
       <workItem from="1606114141661" duration="16837000" />
+      <workItem from="1606150540917" duration="4149000" />
+      <workItem from="1606208982908" duration="5570000" />
+      <workItem from="1606323972469" duration="15000" />
+      <workItem from="1606391236773" duration="675000" />
     </task>
     <servers />
   </component>
@@ -140,6 +125,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1605873733471" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1606151870595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1606151870595" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605874366252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
