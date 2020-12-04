@@ -4,16 +4,227 @@
     <meta charset="UTF-8">
     <title>Tags</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/tags.css" />
-    <!--<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap/bootstrap.css" />-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+    <link rel="stylesheet" type="text/css" href="Respoinsive%20Slider/css/lightslider.css">
+
+    <script type="text/javascript" src="Respoinsive%20Slider/js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="Respoinsive%20Slider/js/lightslider.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+
 </head>
 <body>
+
 <div class="div_tags" name="tags" id="tags">
     <div class="search_tag">
         <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
+    <div class="div_tab">
+        <ul class="nav nav-pills mb-2" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#swipe" aria-selected="true" aria-controls="swipe" role="tab" id="swipe_tab">Swipe Tags</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#listTags" aria-controls="listTags" aria-selected="false" role="tab" id="listTag_tab">List Tags</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="swipe" class="tab-pane fade show active" role="tabpanel" aria-labelledby="swipe_tab">
+                <div class="container_tags" id="container_tags">
+                    <ul class="cs-hidden" id="autoWidth">
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 1 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success" onclick="addTagsLike()">Like</button>
+                                    <button type="button" class="btn btn-danger" onclick="addTagsDislike()">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 2 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 3 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 4 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 5 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 6 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 7 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 8 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 9 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box_tag">
+                                <p class="tag_display">TAG 10 </p>
+                                <div class="button_tags">
+                                    <button type="button" class="btn btn-success">Like</button>
+                                    <button type="button" class="btn btn-danger">Dislike</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="listTags" class="tab-pane fade" role="tabpanel" aria-labelledby="listTag_tab">
+                <div class="list_tags">
+                    <table>
+                        <tr>
+                            <td>
+                                <h3>Tags1</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags2</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags3</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags4</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags5</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags6</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags7</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags8</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags8</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags9</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags10</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags11</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tags12</h3>
+                            </td>
+                            <td><button type="button" class="btn btn-success">Ajouter</button></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="selected_tags" id="selectedTag">
+                <p>selected tags :</p>
+            </div>
+    <div class="submit_btn">
+        <button type="button" class="btn btn-success">Submit</button>
+    </div>
 </div>
+
+<script type="text/javascript" src="js/tag.js"></script>
+
 </body>
+
 </html>
