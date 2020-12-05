@@ -13,6 +13,11 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:BeatryxB" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
@@ -20,23 +25,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fa831de-3cff-4706-97c7-aa109dd50168" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Respoinsive Slider/css/lightslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Respoinsive Slider/img/controls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Respoinsive Slider/js/JQuery3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Respoinsive Slider/js/lightslider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tags.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tags.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Respoinsive Slider/img/Deadpool-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tag.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +95,7 @@
       <workItem from="1606818250181" duration="1046000" />
       <workItem from="1606897485720" duration="14000" />
       <workItem from="1607002957109" duration="123000" />
-      <workItem from="1607073330417" duration="952000" />
+      <workItem from="1607073330417" duration="11038000" />
     </task>
     <servers />
   </component>
@@ -135,7 +132,19 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
