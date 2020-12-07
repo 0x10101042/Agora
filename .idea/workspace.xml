@@ -31,10 +31,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fa831de-3cff-4706-97c7-aa109dd50168" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/inputTags.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputTag.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/inputTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/userTags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userTags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/inputTag.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/inputTag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +49,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -76,6 +78,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,6 +113,8 @@
       <workItem from="1607002957109" duration="123000" />
       <workItem from="1607073330417" duration="11038000" />
       <workItem from="1607163414971" duration="5111000" />
+      <workItem from="1607263491327" duration="2900000" />
+      <workItem from="1607334482178" duration="13605000" />
     </task>
     <servers />
   </component>
