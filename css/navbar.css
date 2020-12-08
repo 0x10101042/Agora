@@ -1,0 +1,61 @@
+/*@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";*/
+
+body {
+    margin: 0;
+}
+
+nav {
+    margin: 0px;
+}
+
+a.navbar-brand>h1 {
+    display: inline;
+    font-size: 23pt;
+    vertical-align: middle;
+    color: #f7dda4;
+    padding-left: 7px;
+}
+
+.navbar-form {
+    margin-left: auto;
+}
+
+.navbar-account {
+    font-size: 23pt;
+}
+
+.dropdown-menu {
+    left: -50px;
+}
+
+
+/**Search Box**/
+
+.search-box {
+    display: none;
+    width: 200px;
+    margin-left: 175px;
+}
+
+.search-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-box ul li a {
+    border: 1px solid #f7dda4;
+    margin-top: -1px;
+    background-color: #343a40;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f7dda4;
+    display: block;
+    transition: 300ms;
+}
+
+.search-box ul li a:hover:not(.header) {
+    background-color: grey;
+    font-size: 19pt;
+}

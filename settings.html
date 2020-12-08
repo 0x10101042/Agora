@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <title>Settings</title>
+    <meta charset='UTF-8' />
+
+    <link rel='shortcut icon' type="image/png" href='./images/logo.png' />
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel='stylesheet' type="text/css" href='css/bootstrap/bootstrap.css' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='../css/navbar.css' />
+    <link rel='stylesheet' type="text/css" href='../css/settings.css' />
+    <link rel='shortcut icon' href='./images/logo.png' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <link rel='stylesheet' href='./css/navbar.css' />
+    <script src="js/scriptNavBar.js"> </script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <a href="./index.html" class="navbar-brand">
+            <img src="./images/logo.png" width="45" height="45" alt="" />
+            <h1 style="display: inline; vertical-align: middle;">Agora</h1>
+        </a>
+
+
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 400px;" onfocus="showsearch()" onfocusout="hidesearch()">
+            <button class=" btn btn-outline-success my-2 my-sm-0 " type="submit ">Search</button>
+        </form>
+
+        <div id="navbarCollapse " class="navbar-collapse justify-content-start collapse">
+
+            <form class="navbar-form form-inline " form_signature="16474143355621859656 ">
+                <div class="input-group search-box ">
+                    <input type="text " id="search " class="form-control " placeholder="Search here... " field_signature="4273170279 " form_signature="16474143355621859656 ">
+                    <span class="input-group-addon "><i class="material-icons "></i></span>
+                </div>
+            </form>
+
+
+
+
+            <div class="navbar-nav ml-auto ">
+                <ul class="nav navbar-nav navbar-right ">
+
+                    <li class="nav-item ">
+                        <a class="nav-link " href="conversation.html ">
+                            <i class="fa fa-envelope "></i> Messages</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="tags.html">
+                            <i class="fa fa-tags "></i> Tags
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="signet.html ">
+                            <i class="fa fa-bookmark "></i> Saved</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="profil.html ">
+                            <i class="fa fa-user-o "></i> Profile</a>
+                    </li>
+                </ul>
+                <div class="nav-item dropdown">
+                    <a href="# " data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action " aria-expanded="false "><i class="fa fa-user-o "> Account</i> <b class="caret "></b></a>
+                    <div class="dropdown-menu ">
+                        <a href="settings.html " class="dropdown-item "><i class="fa fa-sliders "></i> Settings</a>
+                        <div class="divider dropdown-divider "></div>
+                        <a href="register.html" class="dropdown-item "><i class="fa fa-sign-out "></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="search-box-div" class="search-box">
+        <ul>
+            <li><a href="otherUser.html">User 1</a></li>
+            <li><a href="#">User 2</a></li>
+
+            <li><a href="#">User 3</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="centered outterRegister">
+
+        <h1>Settings</h1>
+
+        <form class="changeemail changebox">
+            <h2>Change email</h2>
+            <div class="textbox">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" value="" placeholder="E-mail address" autocomplete="email" required />
+            </div>
+            <div class="textbox">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" value="" placeholder="Confirm e-mail" autocomplete="email" required />
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Change</button>
+        </form>
+
+        <form class="changepass changebox">
+            <h2>Change password</h2>
+            <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" value="" placeholder="Password (at least 8 characters)" autocomplete="new-password" required />
+            </div>
+            <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="confpass" value="" placeholder="Confirm password" autocomplete="new-password" required />
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Change</button>
+        </form>
+
+
+        <form class="changetheme changebox" action="./settings.html">
+            <h2>Change Theme</h2>
+            <ul>
+                <li class="palette">
+                    <input id="palette1" type="radio" name="palette" value="1" checked>
+                    <label for="palette1">Palette 1<br/>
+                        <div class="exemplecolor" style="background-color: #652030;"></div>
+                        <div class="exemplecolor" style="background-color: #FFE3E3;"></div>
+                    </label>
+                </li>
+
+                <li class="palette">
+                    <input id="palette2" type="radio" name="palette" value="2">
+                    <label for="palette2">Palette 2<br/>
+                        <div class="exemplecolor" style="background-color: #AB3;"></div>
+                        <div class="exemplecolor" style="background-color: #EC8"></div>
+                    </label>
+                </li>
+                <li class="palette">
+                    <input id="palette3" type="radio" name="palette" value="2">
+                    <label for="palette3">Palette 3<br/>
+                        <div class="exemplecolor" style="background-color: #5EF;"></div>
+                        <div class="exemplecolor" style="background-color: #C26;"></div>
+                    </label>
+                </li>
+                <li class="palette">
+                    <input id="palette4" type="radio" name="palette" value="2">
+                    <label for="palette4">Palette 4<br/>
+                        <div class="exemplecolor" style="background-color: #E458C5;"></div>
+                        <div class="exemplecolor" style="background-color: #AEB485;"></div>
+                    </label>
+                </li>
+                <li class="palette">
+                    <input id="palette5" type="radio" name="palette" value="2">
+                    <label for="palette5">Palette 5<br/>
+                        <div class="exemplecolor" style="background-color: #ABC123;"></div>
+                        <div class="exemplecolor" style="background-color: #123ABC;"></div>
+                    </label>
+                </li>
+            </ul>
+            <div class="palette custompalette">
+                <input id="palettecustom" type="radio" name="palette" value="custom">
+                <label for="palettecustom">Custom Palette : </label>
+
+                <ul>
+                    <li class="colorselector">
+                        <input id="bkgcolor" type="color" value="#652030" />
+                        <label for="bkgcolor">Background color</label>
+
+                    </li>
+                    <li class="colorselector">
+                        <input type="color" value="#ffe3e3" />
+                        <label for="color">Post color</label>
+
+                    </li>
+                </ul>
+            </div>
+            <input type="submit" value="Submit" class="btn half" />
+            <input type="reset" value="Reset" class="btn half" />
+        </form>
+
+    </div>
+
+    <div class="modal fade modal-dialog" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm it's you</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Current password:</label>
+                            <input type="password" class="form-control" id="recipient-name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

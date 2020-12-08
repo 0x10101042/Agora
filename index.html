@@ -1,0 +1,481 @@
+<head>
+
+<script type="text/javascript" src="js/main.js"></script>
+<link rel='shortcut icon' type="image/png" href='./images/logo.png' />
+<link rel='shortcut icon' href='./images/logo.png' />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel='stylesheet' type="text/css" href='css/bootstrap/bootstrap.css' />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/tags.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap/bootstrap.css" />
+<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="js/inputTag.js"></script>
+
+<link rel="stylesheet" href="css/post.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/comment.css">
+
+<link rel='stylesheet' href='./css/navbar.css' />
+<script src="js/scriptNavBar.js"> </script>
+
+</head>
+
+
+<body>
+
+
+
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <a href="./index.html" class="navbar-brand">
+        <img src="./images/logo.png" width="45" height="45" alt="" />
+        <h1 style="display: inline; vertical-align: middle;">Agora</h1>
+    </a>
+
+
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 400px;" onfocus="showsearch()" onfocusout="hidesearch()">
+        <button class=" btn btn-outline-success my-2 my-sm-0 " type="submit ">Search</button>
+    </form>
+
+    <div id="navbarCollapse " class="navbar-collapse justify-content-start collapse">
+
+        <form class="navbar-form form-inline " form_signature="16474143355621859656 ">
+            <div class="input-group search-box ">
+                <input type="text " id="search " class="form-control " placeholder="Search here... " field_signature="4273170279 " form_signature="16474143355621859656 ">
+                <span class="input-group-addon "><i class="material-icons "></i></span>
+            </div>
+        </form>
+
+
+
+
+        <div class="navbar-nav ml-auto ">
+            <ul class="nav navbar-nav navbar-right ">
+
+                <li class="nav-item ">
+                    <a class="nav-link " href="conversation.html ">
+                        <i class="fa fa-envelope "></i> Messages</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="tags.html">
+                        <i class="fa fa-tags "></i> Tags
+
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="signet.html ">
+                        <i class="fa fa-bookmark "></i> Saved</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="profil.html ">
+                        <i class="fa fa-user-o "></i> Profile</a>
+                </li>
+            </ul>
+            <div class="nav-item dropdown">
+                <a href="# " data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action " aria-expanded="false "><i class="fa fa-user-o "> Account</i> <b class="caret "></b></a>
+                <div class="dropdown-menu ">
+                    <a href="settings.html " class="dropdown-item "><i class="fa fa-sliders "></i> Settings</a>
+                    <div class="divider dropdown-divider "></div>
+                    <a href="register.html" class="dropdown-item "><i class="fa fa-sign-out "></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="search-box-div" class="search-box">
+    <ul>
+        <li><a href="otherUser.html">User 1</a></li>
+        <li><a href="#">User 2</a></li>
+
+        <li><a href="#">User 3</a></li>
+    </ul>
+</div>
+
+
+<p id="base"></p>
+
+<div style="box-sizing: border-box; display:block; position: relative; transform: translateY(35%);">
+
+    <img src="images/arrow_left.png" class="arrow arrow-left" onclick="left_rotation()" >
+    <img src="images/arrow_right.png" class="arrow arrow-right" onclick="right_rotation()">
+
+    <div class="tourniquer">
+        <div id="slide1" class="left-slide" onclick="open_article()">
+            <div class="div_post div_post_mini" name="post" id="post">
+                <div class="title_post">
+                    <br><h1>Smug cat.</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Cat</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Photo</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/cat.jpg" width="360px" height="215px">
+                </div>
+                <p>
+                    <span class="bio-mini">
+                        <b>NyanCam</b>
+                        <br>Photograph.
+                        <br>Always an eye in the lens.
+                    </span>
+                    <span class="reactions">
+                        1 million+ reactions
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="slide2" class="mid-slide" onclick="open_article()">
+            <div class="div_post div_post_mini" name="post" id="post">
+                <div class="title_post">
+                    <br><h1>Look at my tiny bonsai trees ! :)</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Nature</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Plants</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Chill</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/bonsai.jpg" width="192px" height="125px">
+                </div>
+                <div style="text-align: center; font-size: small;">
+                    <br>Took care of these little bois all by myself for 5 years now, <br>and I'm quite proud of how topenArticle've
+                    grown ! These are [...]
+                </div>
+                <p>
+                    <span class="bio-mini">
+                        <b>IloveTrees2758</b>
+                        <br>Professional botanist.
+                        <br>Trees are my life !
+                    </span>
+                    <span class="reactions">
+                        <br>127 reactions
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="slide3" class="right-slide" onclick="open_article()">
+            <div class="div_post div_post_mini" name="post" id="post">
+                <div class="title_post">
+                    <br><h1>My Hollow Knight fan-art</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Art</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Drawing</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Game</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">OC</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/hollow_knight.jpg" width="200px" height="112px">
+                </div>
+                <div style="text-align: center; font-size: small;">
+                    <br>I know it's not that good but it's my first time posting here, please don't be mean :(
+                </div>
+                <p><br>
+                    <span class="bio-mini">
+                        <b>FluffyApple</b>
+                        <br>I like drawing and video games 
+                        <br>(｡ ・ω・｡)
+                    </span>
+                    <span class="reactions">
+                        <br>8046 reactions
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="slide4" class="vide" onclick="open_article()">
+            <div class="div_post div_post_mini" name="post" id="post">
+                <div class="title_post">
+                    <br><h1>A Book for Free Spirits, thoughts ?</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Philosophy</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Book</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Debate</button>
+                </div>
+                <div style="text-align: center; font-size: small;">
+                    <br><br><br>So... I just read Nietzche's "Human, All Too Human", and I was wondering if lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Mauris sit amet consectetur turpis, nec lacinia magna. Integer
+                    condimentum risus at elit vehicula eleifend. Quisque viverra augue a sapien tempor, non gravida risus malesuada. Aenean
+                    suscipit pulvinar suscipit. Sed venenatis suscipit accumsan. Vivamus gravida gravida sapien, semper sagittis diam
+                    bibendum id. Nunc ligula dolor, dictum a eros a, ornare posuere odio. [...]<br><br><br> 
+                </div>
+                <p>
+                    <span class="bio-mini">
+                        <b>Nihilist12</b>
+                        <br>Philosophy undergrad
+                        <br>"God is dead"
+                    </span>
+                    <span style="float: left;">
+                        <br>No reactions. Be the first to comment !
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="slide5" class="vide" onclick="open_article()">
+            <div class="div_post div_post_mini" name="post" id="post">
+                <div class="title_post">
+                    <br><h1>Protests breaking in front of the white house on election day</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Politics</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Photo</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/protests.png" width="428px" height="158px">
+                </div>
+                <p>
+                    <span class="bio-mini">
+                        <b>Oregon2039</b>
+                        <br>US citizen
+                        <br>NYT field journalist 
+                    </span>
+                    <span class="reactions">
+                        14 replies
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="slide6" class="vide" onclick="open_article()">
+            <div class="div_post div_post_mini" name="post" id="post">
+                <div class="title_post">
+                    <br><h1>Actor Rutger Hauer (Blade Runner 1982) dies at 75</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">News</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Actors</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Movies</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Sci-Fi</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/roy.jpg" width="240px" height="135px">
+                </div>
+                <div style="text-align: center; font-size: small;">
+                    https://www.bbc.com/news/entertainment-arts-49098435
+                </div>
+                <p>
+                    <span class="bio-mini">
+                        <b>Cinemanautee</b>
+                        <br>Classic movies lover. 
+                        <br>Sci-Fi afficionado.
+                    </span>
+                    <span class="reactions">
+                        2019 reactions
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>   
+</div>
+
+
+    <div class="div_post divRo" name="post" id="full_post">
+        <p id="top"></p>
+        <img style="float:right" src="images/close2.png" onclick="close_article()">
+        <div name="post" id="post" class="div_post_section">
+            <div  class="title_post"><h1>Look at my tiny bonsai trees ! :)</h1></div>
+            <div class="post_tag">
+                <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
+                <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Nature</button>
+                <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Plants</button>
+                <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Chill</button>
+            </div>
+            <div class="content_post">
+                <div style="text-align: center;">
+                    <br><img src="images/bonsai.jpg" width="768px" height="500px">
+                </div>
+
+                <h4>Took care of these little bois all by myself for 5 years now, and I'm quite proud of how topenArticle've
+                grown ! These are lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque. Id aliquet lectus proin nibh nisl condimentum. Purus sit amet volutpat consequat mauris nunc congue nisi. Ullamcorper sit amet risus nullam eget felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna duis convallis convallis tellus id interdum velit.
+                <br><br>Ut ornare lectus sit amet est. Ligula ullamcorper malesuada proin libero nunc. Sed cras ornare arcu dui. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Feugiat in fermentum posuere urna nec tincidunt. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. Tellus id interdum velit laoreet id donec. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Aliquet enim tortor at auctor urna nunc id cursus. Felis eget velit aliquet sagittis id. Aliquam ultrices sagittis orci a. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Velit egestas dui id ornare arcu odio. Imperdiet nulla malesuada pellentesque elit eget gravida. Eget nullam non nisi est sit amet facilisis magna etiam. A lacus vestibulum sed arcu non odio euismod lacinia. Curabitur gravida arcu ac tortor dignissim convallis.
+                Fringilla phasellus faucibus scelerisque eleifend donec. Proin sed libero enim sed faucibus turpis in. Sed faucibus turpis in eu mi bibendum. Donec et odio pellentesque diam volutpat. Sed adipiscing diam donec adipiscing tristique. Viverra vitae congue eu consequat ac felis donec. Id aliquet risus feugiat in ante. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Viverra adipiscing at in tellus. Integer malesuada nunc vel risus commodo viverra maecenas. Nisl nisi scelerisque eu ultrices vitae. Volutpat lacus laoreet non curabitur. Feugiat nisl pretium fusce id velit ut tortor pretium. Sapien pellentesque habitant morbi tristique senectus et. Bibendum enim facilisis gravida neque. Elit pellentesque habitant morbi tristique senectus et netus et.
+                Pellentesque nec nam aliquam sem. Vitae congue mauris rhoncus aenean. Mauris ultrices eros in cursus. Sollicitudin nibh sit amet commodo. Elementum tempus egestas sed sed risus. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. A diam maecenas sed enim ut. Massa sapien faucibus et molestie ac. Vitae et leo duis ut. Volutpat blandit aliquam etiam erat velit. Libero volutpat sed cras ornare arcu dui vivamus arcu. Enim praesent elementum facilisis leo vel.
+                <br><br>Ultrices dui sapien eget mi proin sed libero. Amet luctus venenatis lectus magna fringilla urna porttitor. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Nisl tincidunt eget nullam non nisi. Integer quis auctor elit sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Neque volutpat ac tincidunt vitae semper. In cursus turpis massa tincidunt dui ut ornare lectus sit. Tincidunt dui ut ornare lectus. Nunc consequat interdum varius sit amet mattis vulputate enim. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Sit amet dictum sit amet justo donec. Quis ipsum suspendisse ultrices gravida. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Mattis ullamcorper velit sed ullamcorper. Aliquam ut porttitor leo a diam sollicitudin tempor. Lobortis feugiat vivamus at augue eget arcu dictum.
+                Tincidunt id aliquet risus feugiat in ante. Eget egestas purus viverra accumsan. Feugiat vivamus at augue eget arcu dictum varius duis. Est placerat in egestas erat imperdiet sed euismod nisi. Leo duis ut diam quam nulla porttitor massa id. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Sed felis eget velit aliquet sagittis id consectetur. Et malesuada fames ac turpis egestas. Massa tincidunt dui ut ornare lectus sit. Dignissim cras tincidunt lobortis feugiat vivamus. Aliquet bibendum enim facilisis gravida. Sit amet nulla facilisi morbi tempus iaculis. Sollicitudin aliquam ultrices sagittis orci. Libero enim sed faucibus turpis in eu mi bibendum neque. Et magnis dis parturient montes nascetur. Ipsum dolor sit amet consectetur adipiscing elit. Ac auctor augue mauris augue neque gravida in. Ac orci phasellus egestas tellus rutrum tellus pellentesque.
+                Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Habitant morbi tristique senectus et netus et malesuada fames. Eget duis at tellus at urna. Suspendisse sed nisi lacus sed viverra tellus. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Egestas erat imperdiet sed euismod. Lacus sed turpis tincidunt id. Neque viverra justo nec ultrices dui sapien eget mi. Massa tempor nec feugiat nisl. Sapien eget mi proin sed libero enim sed faucibus turpis. Eget duis at tellus at. Nibh ipsum consequat nisl vel pretium. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. At erat pellentesque adipiscing commodo. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Nisl purus in mollis nunc sed id semper risus. Quis hendrerit dolor magna eget est. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Pellentesque id nibh tortor id aliquet.</h4>
+            </div>
+            <div class="div_user_section">
+            
+                <div class="name_user">
+            
+                </div>
+                <div class="bio_user">
+                    <h1>IloveTrees2758</h1>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg btn_follow">Follow</button>
+            </div>
+            <div class="post_reply">
+            <p>127 reactions</p>
+            </div>
+        </div>
+    <div class="div_comment_section">
+        <div class="comment">
+        <div class="title_comment">
+            <h3>Lorem Ipsum</h3>
+        </div>
+            <div class="post_tag">
+                <button type="button" class="btn btn-primary btn-lg">Tag 1</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 2</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 3</button>
+            </div>
+        <div class="content_comment">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque. Id aliquet lectus proin nibh nisl condimentum. Purus sit amet volutpat consequat mauris nunc congue nisi. Ullamcorper sit amet risus nullam eget felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna duis convallis convallis tellus id interdum velit.</p>
+        </div>
+            <div class="nb_comment">
+                <p>3 replies</p>
+            </div>
+    </div>
+        <div class="comment">
+            <div class="title_comment">
+                <h3>Lorem Ipsum</h3>
+            </div>
+            <div class="post_tag">
+                <button type="button" class="btn btn-primary btn-lg">Tag 1</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 2</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 3</button>
+            </div>
+            <div class="content_comment">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque. Id aliquet lectus proin nibh nisl condimentum. Purus sit amet volutpat consequat mauris nunc congue nisi. Ullamcorper sit amet risus nullam eget felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna duis convallis convallis tellus id interdum velit.</p>
+            </div>
+            <div class="nb_comment">
+             <p>4 replies</p>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="title_comment">
+                <h3>Lorem Ipsum</h3>
+            </div>
+            <div class="post_tag">
+                <button type="button" class="btn btn-primary btn-lg">Tag 1</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 2</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 3</button>
+            </div>
+            <div class="content_comment">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque. Id aliquet lectus proin nibh nisl condimentum. Purus sit amet volutpat consequat mauris nunc congue nisi. Ullamcorper sit amet risus nullam eget felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna duis convallis convallis tellus id interdum velit.</p>
+            </div>
+            <div class="nb_comment">
+                <p>2 replies</p>
+            </div>
+        </div>
+        <div class="comment" onclick="redirect()">
+            <div class="title_comment">
+                <h3>Lorem Ipsum</h3>
+            </div>
+            <div class="post_tag">
+                <button type="button" class="btn btn-primary btn-lg">Tag 1</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 2</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 3</button>
+            </div>
+            <div class="content_comment">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque. Id aliquet lectus proin nibh nisl condimentum. Purus sit amet volutpat consequat mauris nunc congue nisi. Ullamcorper sit amet risus nullam eget felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna duis convallis convallis tellus id interdum velit.</p>
+            </div>
+            <div class="nb_comment">
+                <p>No reply. Be the first to comment !</p>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="title_comment">
+                <h3>Lorem Ipsum</h3>
+            </div>
+            <div class="post_tag">
+                <button type="button" class="btn btn-primary btn-lg">Tag 1</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 2</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 3</button>
+            </div>
+            <div class="content_comment">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque. Id aliquet lectus proin nibh nisl condimentum. Purus sit amet volutpat consequat mauris nunc congue nisi. Ullamcorper sit amet risus nullam eget felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna duis convallis convallis tellus id interdum velit.</p>
+            </div>
+            <div class="nb_comment">
+                <p>3 replies</p>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="title_comment">
+                <h3>Lorem Ipsum</h3>
+            </div>
+            <div class="post_tag">
+                <button type="button" class="btn btn-primary btn-lg">Tag 1</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 2</button>
+                <button type="button" class="btn btn-primary btn-lg">Tag 3</button>
+            </div>
+            <div class="content_comment">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed. Scelerisque eleifend donec pretium vulputate sapien. Eu lobortis elementum nibh tellus molestie. Quis varius quam quisque id diam. Aliquam sem et tortor consequat id porta nibh venenatis cras. Duis ut diam quam nulla. In metus vulputate eu scelerisque. Id aliquet lectus proin nibh nisl condimentum. Purus sit amet volutpat consequat mauris nunc congue nisi. Ullamcorper sit amet risus nullam eget felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna duis convallis convallis tellus id interdum velit.</p>
+            </div>
+            <div class="nb_comment">
+                <p>7 replies</p>
+            </div>
+        </div>
+    </div>
+    
+        <div class="btn_position">
+            <button type="button" class="btn btn-primary btn-lg" onclick="open_comment()">Comment</button>
+            <button type="button" class="btn btn-primary btn-lg">Reactions</button>
+            <button type="button" class="btn btn-primary btn-lg">Filter</button>
+        </div>
+    </div>
+</div>
+
+<div id="open_comment" class="comment_hide">
+    <p id="comment"></p>
+    <a onclick="close_comment(); "><img style="float:right" src="images/close2.png"></a>
+    <center>
+        <h1>Comment : </h1>
+    </center>
+    <br>
+    <center><textarea style="resize: none;height:300px;width: 800px;"class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        
+    <br>
+
+    <center>
+        <button class="reaction good-reaction"></button>
+        <button class="reaction neutral-reaction"></button>
+        <button class="reaction bad-reaction"></button>
+
+        <br>
+        <button onclick="show_input_tag()" class="btn-upload">tag</button></center>
+        <br>
+        <div class="parent-div click">
+            <button class="btn-upload click">Add a picture</button>
+            <input type="file" name="upfile">
+        </div>
+
+        <br><br><br><br>
+        <button class="btn btn-primary btn-lg">Send</button>
+        <br><br>
+
+        <div  style="visibility: hidden; border:2px solid black;" class="div_tags"  id="tags">
+            <a onclick="hidden_input_tag();"><img style="float:right" src="images/close2.png"></a>
+            <div class="custom-search"></div>
+            <input class="form-control" type="text" placeholder="Default input" oninput="addTagOnList()" id="inputTag">
+            <div id="listTags">
+                <h3>This is the list of tags :</h3>
+        
+            </div>
+        </div>
+    </center>
+</div>
+</body>
+
+
+
+
+
+
+
