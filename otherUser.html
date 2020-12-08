@@ -112,6 +112,7 @@
                     <a>Play with me one day ;)</a>
                     <br><br>
                     <button id="button-follow" class="btn-follow" type"button" onclick="change_follow_to_unfollow()">Follow</button>
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal">Unwanted tag</button
                 </div>
             </div>
         </div>
@@ -120,34 +121,32 @@
 
     <center>
         <div class="container">
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
     
         <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-    
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="custom-search"></div>
-                        <input class="form-control" type="text" placeholder="Default input" oninput="dislikeTagFromPeople()"
-                            id="inputTag">
-                        <div id="listTags">
-                            <h3>This is the list of tags :</h3>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content"  style="background-color: #722E37; color: white">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Write tag you don't want to see from this User :</h4>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <div class="modal-body">
+                            <div class="custom-search"></div>
+                            <input class="form-control" type="text" placeholder="Default input" oninput="dislikeTagFromPeople()" id="inputTag">
+                            <div id="listTags">
+                                <h4>This is the list of tags :</h4>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+                            </div>
                         </div>
+
                     </div>
-    
                 </div>
+
             </div>
-        </div>
         <div class="inside">
         <div class="inside">
             <a class="subtitle">Publications : 3 </a>
