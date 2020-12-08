@@ -14,12 +14,17 @@ function dislikeTagFromPeople(){
     var tags = document.getElementById("inputTag").value;
     var list = document.getElementById("listTags");
     if(tags.includes(',') || tags.includes(';')){
-        var tagToList = tags.replace(',','').replace(';','');
-        if(tagToList!=''){
-            list.innerHTML += '<button type="button" class="btn btn-danger" style="margin: 10px" id="like_tag" onclick="deleteLikeTag()">'+tagToList+'</button>';
+        tags = tags.replace(',','').replace(';','');
+        if(tags!=''){
+            list.innerHTML += '<button type="button" class="btn btn-danger" style="margin: 10px" id="'+tags+'" onclick="deleteTagEnter(this.id)">'+tags+'</button>';
             document.getElementById("inputTag").value='';
         }
     }
+}
+
+function deleteTagEnter(clickedId){
+    var tagRemove = document.getElementById(clickedId);
+    tagRemove.remove();
 }
 
 function show_input_tag()

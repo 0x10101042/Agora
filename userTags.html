@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/inputTag.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -21,19 +22,19 @@
         <div class="modal-dialog">
 
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content"  style="background-color: #722E37; color: white">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title">Write tag you don't want to see from this User :</h4>
                 </div>
                 <div class="modal-body">
                     <div class="custom-search"></div>
                     <input class="form-control" type="text" placeholder="Default input" oninput="dislikeTagFromPeople()" id="inputTag">
                     <div id="listTags">
-                        <h3>This is the list of tags :</h3>
+                        <h4>This is the list of tags :</h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
                 </div>
             </div>
 
